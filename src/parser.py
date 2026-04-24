@@ -2,7 +2,7 @@ import cloudscraper
 import pandas as pd
 from bs4 import BeautifulSoup
 import time
-import json
+from tqdm import tqdm
 
 # Создаем сессию cloudscraper один раз
 scraper = cloudscraper.create_scraper(
