@@ -3,7 +3,6 @@ import pandas as pd
 from bs4 import BeautifulSoup
 import time
 from tqdm import tqdm
-import json
 
 # Создаем сессию cloudscraper один раз
 scraper = cloudscraper.create_scraper(
@@ -34,7 +33,8 @@ def get_problems():
 
         rows = []
         for p in problems:
-            if 'rating' not in p: continue
+            if 'rating' not in p:
+                continue
             key = (p['contestId'], p['index'])
             rows.append({
                 'contestId': p['contestId'],
