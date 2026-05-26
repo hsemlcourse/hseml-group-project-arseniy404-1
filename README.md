@@ -85,6 +85,7 @@ hseml-group-project-arseniy404-1/
 │   └── 03_experiments.ipynb           # RF, XGBoost, ансамбль, финальная модель
 │
 ├── src/
+│   ├── app.py                         # Wrapper на FastAPI
 │   └── parser.py                      # Парсер данных с Codeforces
 │
 ├── models/
@@ -103,6 +104,7 @@ hseml-group-project-arseniy404-1/
 │   └── report.md                      # Финальный отчёт (подробный анализ)
 │
 ├── tests/
+│   ├── test_api.py                    # Тестирование API
 │   └── test_pipeline.py               # Минимальные тесты (данные, пропуски, модель)
 │
 ├── requirements.txt                   # Все зависимости с точными версиями
